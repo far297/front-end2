@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Planner</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Planner</h1>
+        <div id="content">
+            <form id="plannerForm">
+                <label for="task">Task:</label>
+                <input type="text" id="task" name="task" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <div>
+                <label for="week">Select week:</label>
+                <input type="week" id="week" name="week" required>
+                <button id="showTasks" type="button">Show Tasks</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
